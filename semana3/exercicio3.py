@@ -7,24 +7,24 @@ quando a matricula 0 for digitada.
 Ao final deve apresentar os números de 
 matriculas separados em 3 grupos.
 '''
-grupo 1 []
-grupo 2 []
-grupo 3 []
- 
- while true:
-      matricula = int(input("Digite o número da matricula (digite 0 para parar): "))
-      if matricula == 0:
-         break
-      
-      if matricula % 3 == 0:
-         grupo1.append(matricula)
+contador = 1
+grupo1 = []
+grupo2 = []
+grupo3 = []
 
-      elif matricula % 3 == 1:
-         grupo2.append(matricula)
+while True:
+matricula = int(input('Digite a matricula'))
+        if contador == 1: 
+            grupo.append(matricula)
+        elif grupo == 2:
+            grupo2.append(matricula)
+        elif contador == 3:
+            grupo3.append(matricula)
+            contador = 0
+            contador = contador + 1
 
-      else
-         grupo3.append(matricula)
-
-print("Grupo 1: " grupo1)
-print("Grupo 2: " grupo2)
-print("Grupo 3: " grupo3)
+            if matricula == 0:
+                break    
+print("Grupo 1",grupos[0])  
+print("Grupo 2",grupos[1]) 
+print("Grupo 3",grupos[2])                                                              
